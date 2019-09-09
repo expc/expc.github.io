@@ -13,15 +13,14 @@ let pre = document.getElementsByTagName('pre')[0];
 // var chainId='e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473';
 // const rpc = new eosjs_jsonrpc.JsonRpc('https://jungle2.cryptolions.io');
 // const rpc2 = new eosjs_jsonrpc.JsonRpc('https://jungle2.cryptolions.io');
-var contract_code='expc11111111';
-var contract_scope='expc11111111';
+var contract_code='expcorg12345';
+var contract_scope='expcorg12345';
 var contract_currency='EXPC';
 var chainId='e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473';
 const rpc = new eosjs_jsonrpc.JsonRpc('https://eos.greymass.com');
 const rpc2 = new eosjs_jsonrpc.JsonRpc('https://eos.greymass.com');
 
 let user_list=new Array();
-
 
 // mainnet
 // var chainId = 'e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473';
