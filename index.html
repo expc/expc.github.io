@@ -51,7 +51,7 @@
 				<div class="info1 text-left">
 					<p>{{languageCon.amount}}:</p>
 					<div>
-						<input style="margin:5px 0 0 0;" id="eos_price"  placeholder="{{languageCon.amount}}" type="" name="">
+						<input style="margin:5px 0 0 0;" id="eos_price"  placeholder="" type="" name="">
 						<span onclick="copy_text('eos_price')"
 							  style="color:#fff;" class="fa fa-copy"></span>
 <!--						<span onclick="copy_text('eos_price')"><img style="width: 20px;" src="./images/addr.png"></span>-->
@@ -80,7 +80,7 @@
 					<div class="flex-between">
 						<span><img style="width: 80px;" src="./images/google.png"></span>
 						<span><img style="width: 20px;" src="./images/add.png"></span>
-						<span onclick="scatter()"><img style="width: 80px;" src="./images/scatter.png"></span>
+						<span onclick=" "><img style="width: 80px;" src="./images/scatter.png"></span>
 					</div>
 					<br><br>
 				</div>
@@ -198,7 +198,7 @@
 		<a href="./exchange.html" style="color:#fff;text-decoration:none;display:block;font-size: 20px;text-align: center" class="expc-title">{{languageCon.entry_exchange}}</a>
 		<p onclick="login_err()" class="expc-title">{{languageCon.investment}}</p>
 		<ul class="expc-investment" id="investment_list"></ul>
-		<button style="display: none;" onclick="alert_show('tran')" id="btn_tran" class="button">{{languageCon.purchase}} EXPC</button>
+		<button style="display: none;" data-price="0.00 EOS" onclick="alert_show('tran')" id="btn_tran" class="button">{{languageCon.purchase}} EXPC</button>
 		<button style="display: none;" onclick="alert_show('login')" id="btn_login" class="button">{{languageCon.login}}</button>
 	</div>
 </body>

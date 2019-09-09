@@ -413,10 +413,13 @@ function scatter_status() {
         if(connected){
             // console.log('scatter_login');
             $(".login_username_action").attr('onclick','scatter_up()');
+            $("#btn_login").attr('onclick','scatter_up()');
             $(".nodetype3 li").attr('onclick','transfer(this)');
+            $("#btn_tran").attr('onclick','transfer(this)');
         }else{
             // console.log('login_username');
             $(".login_username_action").attr('onclick','login_up_page()');
+            $("#btn_login").attr('onclick','login_up_page()');
         }
     });
 
@@ -575,12 +578,9 @@ function accountsm(user_sess) {
                 table: 'accountsm',
                 scope: user_sess,
             })
-               console.log(accountsm['rows']);
-            if(accountsm['rows'].hasOwnProperty('balance')){
-                var balance=accountsm['rows'][0]['balance'];
-                $("#user_accountsm").html(balance);
-            }
-            // console.log(accountsm['rows'].hasOwnProperty('balance'));
+            var balance=accountsm['rows'][0]['balance'];
+            $("#user_accountsm").html(balance);
+
         } catch (e) {
             console.log(e);
         }
