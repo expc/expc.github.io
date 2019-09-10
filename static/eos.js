@@ -2,7 +2,7 @@
 // console.log(decimal(test2,4));
 var data = null;
 var username;
-
+var users_limit=100000000;
 let pre = document.getElementsByTagName('pre')[0];
 
 
@@ -187,6 +187,7 @@ function open2(successCallback, errorCallbak) {
                             code: contract_code,
                             table: 'users',
                             scope: contract_scope,
+                            limit:users_limit,
                         });
                         var account_s=null;
                         var s=users.rows;
@@ -220,7 +221,7 @@ function open2(successCallback, errorCallbak) {
         errorCallbak(error);
     });
 }
-// 转账
+ 
 function transfer(obj){
     var price=$(obj).data('price');
     $("#tran_eos_price").val('');
@@ -278,7 +279,7 @@ function transfer2(obj){
         // scatter_up();
     }
     var eos = scatter.eos(network, Eos);
-    console.log(eos);
+    // console.log(eos);
 
     eos.transaction({
         actions: [
@@ -345,6 +346,7 @@ function user_lists() {
                 code: contract_code,
                 table: 'users',
                 scope: contract_scope,
+                limit:users_limit,
                 // upper_bound: user_sess
             });
             var s=users.rows;
@@ -359,8 +361,9 @@ function user_lists() {
     })();
 }
 
+
 load_index();
-console.log(user_list);
+// console.log(user_list);
 
 function mature_quantity() {
     (async () => {
@@ -431,7 +434,7 @@ function scatter_up() {
         return;
     }
     scatter.connect('SAMPLE').then(connected => {
-        console.log('connected',connected);
+        // console.log('connected',connected);
         open(function () {
 
         }, function (error) {
@@ -593,6 +596,7 @@ function users(user_sess) {
                 code: contract_code,
                 table: 'users',
                 scope: contract_scope,
+                limit:users_limit,
                 // upper_bound: user_sess
             });
             var s=users.rows;
@@ -651,6 +655,7 @@ function setUserloginInfo() {
             code: contract_code,
             table: 'users',
             scope: contract_scope,
+            limit:users_limit,
             // upper_bound: user_sess
         });
     var user_login_status='';
@@ -732,6 +737,7 @@ function login() {
                 code: contract_code,
                 table: 'users',
                 scope: contract_scope,
+                limit:users_limit,
             });
             var user_login_status='';
             var s=users.rows;
@@ -840,7 +846,7 @@ function SecondToDate(msd) {
 }
 var t1 = window.setTimeout(hello,1000);
 function hello() {
-    console.log(currTimestamp());
+    // console.log(currTimestamp());
 }
 setInterval("time_show_down()","1000");
 function time_show_down(){
@@ -924,7 +930,7 @@ function copy_text(id){
     if(text==''){
         text = $("#"+id).html();
     }
-    console.log(text);
+    // console.log(text);
     copyText(text);
     layer.open({
         content: vm.languageCon.copy_msg,
