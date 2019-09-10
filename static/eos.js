@@ -2,7 +2,7 @@
 // console.log(decimal(test2,4));
 var data = null;
 var username;
-var users_limit=100000000;
+var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
 
 
@@ -221,7 +221,7 @@ function open2(successCallback, errorCallbak) {
         errorCallbak(error);
     });
 }
- 
+
 function transfer(obj){
     var price=$(obj).data('price');
     $("#tran_eos_price").val('');
