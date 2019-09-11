@@ -62,8 +62,10 @@ var vm = new Vue({
                 hour:'时 ',
                 minute:'分 ',
                 countdown:'交易所开放倒计时 ',
+                surplus:'剩余 ',
             },
             English: {
+                surplus :'Surplus ',
                 countdown :'Countdown of Exchange Opening ',
                 minute :'m ',
                 hour :'h ',
