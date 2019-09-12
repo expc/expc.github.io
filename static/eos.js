@@ -16,7 +16,7 @@ let pre = document.getElementsByTagName('pre')[0];
 var contract_code='expcorg12345';
 var contract_scope='expcorg12345';
 var contract_currency='EXPC';
-var chainId='e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473';
+var chainId='aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906';
 const rpc = new eosjs_jsonrpc.JsonRpc('https://eos.greymass.com');
 const rpc2 = new eosjs_jsonrpc.JsonRpc('https://eos.greymass.com');
 
@@ -780,7 +780,6 @@ function setSession(key,value) {
     return sessionStorage.setItem(key,value);
 }
 function rounds1_data(r) {
-    // console.log(r);
     var html ='';
     var data=r.rows;
     var total_quantity=0;
@@ -788,22 +787,24 @@ function rounds1_data(r) {
     for ( var i = 0; i <data.length; i++){
         total_quantity=Number(data[i]['total_quantity']) + total_quantity;
         current_quantity=Number(data[i]['current_quantity']) + current_quantity;
-        // console.log(total_quantity);
         html+=investment(data[i]);
     }
-    // console.log(total_quantity);
-    // console.log(current_quantity);
-    $("#total_quantity").html(total_quantity/100000000);
-    $("#current_quantity").html(current_quantity/100000000);
+    total_quantity=total_quantity/100000000
+    current_quantity=current_quantity/100000000
+    $("#total_quantity").html(total_quantity);
+    $("#current_quantity").html(current_quantity);
     $("#investment_list").html(html);
+    var val1=total_quantity /100;
+    var val2=current_quantity /100;
+    // console.log('12333',total_quantity - decimal(current_quantity),4);
+    // console.log(val1);
+    // console.log(current_quantity);
+    // myChart(value1,value2);
 }
-// console.log();
 
 function nodetype3_data(data) {
-    // console.log(data);
     var s=data.rows;
     var html='';
-    // console.log(s[0]['t_name']);
 
     for ( var i = 0; i <s.length; i++){
         var eos_price= s[i]['eos_price'];
@@ -949,50 +950,50 @@ function copyText(text, callback){
     document.getElementById('cp_hgz_input').remove();
     // if(callback) {callback(text)}
 }
-
-var dom = document.getElementById("container");
-var myChart = echarts.init(dom);
-option = null;
-
-option = {
-    tooltip: {
-        trigger: 'item',
-        formatter: "{a} <br/>{b}: {c} ({d}%)"
-    },
-    series: [
-        {
-            type:'pie',
-            radius: ['70%', '80%'],
-            avoidLabelOverlap: false,
-            label: {
-                normal: {
-                    show: false,
-                    position: 'center'
-                },
-                emphasis: {
-                    show: false,
-                    textStyle: {
-                        fontSize: '0',
-                        fontWeight: 'bold'
+function myChart(value1,value2){
+    var dom = document.getElementById("container");
+    var myChart = echarts.init(dom);
+    option = null;
+    option = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        series: [
+            {
+                type:'pie',
+                radius: ['70%', '80%'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        show: false,
+                        textStyle: {
+                            fontSize: '0',
+                            fontWeight: 'bold'
+                        }
                     }
-                }
-            },
-            color:['#23c8ff','#7232ff','#ffa022','#fe566a'],
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
-            data:[
-                {value:35, name:vm.languageCon.excavation},
-                {value:65, name:vm.languageCon.quantity_mining},
-            ]
-        }
-    ]
-};
-;
-if (option && typeof option === "object") {
-    myChart.setOption(option, true);
+                },
+                color:['#23c8ff','#7232ff','#ffa022','#fe566a'],
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data:[
+                    {value:value1, name:vm.languageCon.excavation},
+                    {value:value2, name:vm.languageCon.quantity_mining},
+                ]
+            }
+        ]
+    };
+
+    if (option && typeof option === "object") {
+        myChart.setOption(option, true);
+    }
 }
 t = window.setInterval("writeTip()",2000);
 function writeTip() {
