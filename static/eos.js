@@ -794,14 +794,32 @@ function rounds1_data(r) {
     $("#total_quantity").html(total_quantity);
     $("#current_quantity").html(current_quantity);
     $("#investment_list").html(html);
-    var val1=total_quantity /100;
-    var val2=current_quantity /100;
+    var val1=total_quantity ;
+    var val2=accSub(total_quantity,current_quantity);
     // console.log('12333',total_quantity - decimal(current_quantity),4);
-    // console.log(val1);
-    // console.log(current_quantity);
-    // myChart(value1,value2);
+    console.log(total_quantity);
+    console.log(current_quantity);
+    console.log(accSub(total_quantity,current_quantity));
+    myChart(val1,val2);
 }
-
+function accSub(arg1, arg2) {
+    var r1, r2, m, n;
+    try {
+        r1 = arg1.toString().split(".")[1].length;
+    }
+    catch (e) {
+        r1 = 0;
+    }
+    try {
+        r2 = arg2.toString().split(".")[1].length;
+    }
+    catch (e) {
+        r2 = 0;
+    }
+    m = Math.pow(10, Math.max(r1, r2)); //last modify by deeka //动态控制精度长度
+    n = (r1 >= r2) ? r1 : r2;
+    return ((arg1 * m - arg2 * m) / m).toFixed(n);
+}
 function nodetype3_data(data) {
     var s=data.rows;
     var html='';
