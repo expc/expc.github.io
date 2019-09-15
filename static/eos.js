@@ -816,7 +816,7 @@ function accSub(arg1, arg2) {
     catch (e) {
         r2 = 0;
     }
-    m = Math.pow(10, Math.max(r1, r2)); 
+    m = Math.pow(10, Math.max(r1, r2));
     n = (r1 >= r2) ? r1 : r2;
     return ((arg1 * m - arg2 * m) / m).toFixed(n);
 }
@@ -939,8 +939,12 @@ function investment(data){
 }
 white_paper();
 function white_paper() {
-    var pdf = location.protocol +'//'+ location.host+'/pdf/eos_expc.pdf';
+    var isLanguage= localStorage.getItem("isLanguage");
+    // console.log(isLanguage);
+
+    var pdf = location.protocol +'//'+ location.host+'/pdf/EosExpc'+ isLanguage +'.pdf';
     $("#white_paper").attr('href',pdf);
+    // $("#white_paper").attr('data-lang',isLanguage);
 }
 
 
