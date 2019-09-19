@@ -53,7 +53,7 @@ function checkoutNetworks() {
         httpEndpoint : endpoint,
     };
 
-    console.log(`NETWORK：${JSON.stringify(network)}`);
+    // console.log(`NETWORK：${JSON.stringify(network)}`);
 }
 
 function hasScatter() {
@@ -69,7 +69,7 @@ function checkAccount() {
         eos.getAccount({ account_name: getAccountName() }).then(res => {
             var cb = res.core_liquid_balance;
             balance = res.length == 0 ? 0 : new Number(cb.split(' ')[0]).valueOf();
-            console.log(getAccountName()+', '+cb);
+            // console.log(getAccountName()+', '+cb);
 
             var cl = res.cpu_limit;
             cpuAvailable = new Number((cl.available * 100 / cl.max)).toFixed(2) + '%';
@@ -143,7 +143,7 @@ function scatter_login() {
 }
 
 function scatter_logout() {
-    console.log(identity);
+    // console.log(identity);
     if (identity) {
         // console.log(identity);
         identity = null;
@@ -196,7 +196,7 @@ function open2(successCallback, errorCallbak) {
                                 account_s='1';
                             }
                         }
-                        console.log(account_s);
+                        // console.log(account_s);
                         if(account_s=='1'){
                             successCallback();
                             tran2($("#tran_eos_price").val());
@@ -797,9 +797,9 @@ function rounds1_data(r) {
     var val1=total_quantity ;
     var val2=accSub(total_quantity,current_quantity);
     // console.log('12333',total_quantity - decimal(current_quantity),4);
-    console.log(total_quantity);
-    console.log(current_quantity);
-    console.log(accSub(total_quantity,current_quantity));
+    // console.log(total_quantity);
+    // console.log(current_quantity);
+    // console.log(accSub(total_quantity,current_quantity));
     myChart(val1,val2);
 }
 function accSub(arg1, arg2) {
@@ -940,11 +940,8 @@ function investment(data){
 white_paper();
 function white_paper() {
     var isLanguage= localStorage.getItem("isLanguage");
-    // console.log(isLanguage);
-
     var pdf = location.protocol +'//'+ location.host+'/pdf/EosExpc'+ isLanguage +'.pdf';
     $("#white_paper").attr('href',pdf);
-    // $("#white_paper").attr('data-lang',isLanguage);
 }
 
 
