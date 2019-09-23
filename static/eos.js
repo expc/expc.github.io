@@ -372,13 +372,15 @@ function mature_quantity() {
                 code: contract_code,
                 table: 'mature',
                 scope: contract_scope,
+                limit:10000000,
             })
             var quantity=0;
             var s=mature.rows;
             for ( var i = 0; i <s.length; i++){
                 var join =s[i]['quantity'].split(' ');
                 var num=join[0];
-                // console.log(num);
+                console.log('join2',join);
+                console.log('join',num);
                 quantity=Number(num)+quantity ;
             }
             // console.log(quantity);
