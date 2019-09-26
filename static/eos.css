@@ -62,8 +62,10 @@ body {
 	font-size: 10px;
 }
 .expc-echart .expc-echart-left {
-	width: 25%;
+	width: 30%;
 	float: left;
+	position: absolute;
+	left: 10px;
 }
 .icon-blue {
 	width: 6px;
@@ -96,10 +98,13 @@ body {
 .expc-echart .expc-echart-center {
 	width: 50%;
 	float: left;
+	    margin-left: 25%;
 }
 .expc-echart .expc-echart-right {
-	width: 25%;
+	width: 30%;
 	float: right;
+	position: absolute;
+    right: 10px;
 }
 .expc-echart-left {
 	position: relative;
@@ -146,7 +151,7 @@ body {
 .expc-statistical-1 .left {
 	float: left;
 	background: #352c68;
-	width: 30%;
+	width: 43%;
 	padding: 7px 15px;
 	border: 1px solid #73629d;
 	border-top-right-radius: 30px;
@@ -156,7 +161,7 @@ body {
 .expc-statistical-1 .right {
 	float: right;
 	background: #352c68;
-	width: 30%;
+	width: 43%;
 	padding: 7px 15px;
 	box-sizing: border-box;
 	text-align: right;
@@ -242,7 +247,7 @@ body {
 }
 .expc-investment li .li-1 {
 	text-align: center;
-	width: 60px;
+	width: 35px;
 	font-size: 15px;
 	font-weight: 700;
 	padding: 4px;
@@ -256,7 +261,7 @@ body {
 
 }
 .expc-investment li .li-2 {
-	width: calc(100% - 60px);
+	width: calc(100% - 35px);
 }
 
 .expc-investment li .li-2 .top {
@@ -277,13 +282,15 @@ body {
 	width: 50%;
 }
 .expc-investment li .li-2 .bottom {
-	line-height: 3;
+	/*line-height: 3;*/
 	border-top: 1px solid #73629d;
 }
 .expc-investment li .li-2 .bottom span {
 	float: left;
 	display: inline-block;
 	width: 50%;
+	    position: relative;
+    top: 8px;
 	text-align: center;
 }
 
