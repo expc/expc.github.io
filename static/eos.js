@@ -379,8 +379,8 @@ function mature_quantity() {
             for ( var i = 0; i <s.length; i++){
                 var join =s[i]['quantity'].split(' ');
                 var num=join[0];
-                console.log('join2',join);
-                console.log('join',num);
+                // console.log('join2',join);
+                // console.log('join',num);
                 quantity=Number(num)+quantity ;
             }
             // console.log(quantity);
@@ -827,7 +827,11 @@ function nodetype3_data(data) {
     var html='';
 
     for ( var i = 0; i <s.length; i++){
-        var eos_price= s[i]['eos_price'];
+        var price= s[i]['eos_price'];
+        var price_arr=price.split(" ");
+        var eos_price1=price_arr[0].split(".");
+        var eos_price=eos_price1[0] + " EOS ";
+        console.log(eos_price);
         var high='';
         if(s[i]['t_name']=='high'){
             high=vm.languageCon.high_node + vm.languageCon.node;
