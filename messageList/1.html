@@ -4,15 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Expc chain</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-	<link rel="stylesheet" type="text/css" href="./static/message.css">
+	<link rel="stylesheet" type="text/css" href="../static/message.css">
+	<script src="script/jquery.1.11.3.js"></script>
 </head>
 <body>
 	<div id="app" class="list">
-		<p class="title text-center">标题标题标题标题</p>
-		<p class="title-h2">发布时间：2019-09-09</p>
+		<p class="title text-center">{{languageCon.announcementList1Title}}</p>
+		<p class="title-h2">{{languageCon.announcementTime}}：{{languageCon.announcementList1Time}}</p>
 		<!-- 文字 -->
 		<div class="text">
-			文字内容内容
+			{{languageCon.announcementList1Content}}
 		</div>
 		<!-- 图片 -->
 		<div class="text-center">
@@ -25,6 +26,10 @@
 		
 	</div>
 </body>
-	<script type="text/javascript" src="./static/vue.min.js"></script>
+	<script type="text/javascript" src="../static/vue.min.js"></script>
+	
+	<script type="text/javascript" src="../static/vue.data.js"></script>
+	<script type="text/javascript" src="../static/eos.js"></script>
+
 	
 </html>

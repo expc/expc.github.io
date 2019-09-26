@@ -63,6 +63,12 @@ var vm = new Vue({
                 minute:'分 ',
                 countdown:'交易所开放倒计时 ',
                 surplus:'剩余 ',
+                announcement:'官方公告',
+                announcementNo:'暂无数据',
+                announcementTime:'发布时间',
+                announcementList1Title:'标题',
+                announcementList1Time:'2019-09-09',
+                announcementList1Content:'内容',
             },
             English: {
                 surplus :'Surplus ',
@@ -125,6 +131,14 @@ var vm = new Vue({
                 round:'Round',
                 start_time:'Start date',
                 end_time:'End date',
+                announcement:'announcement',
+                announcementNo:'Temporarily no data',
+                announcementTime:'time',
+                announcementList1Title:'title',
+                announcementList1Time:'2019-09-09',
+                announcementList1Content:'content',
+                
+                
             }
         },
         languageBlooen: localStorage.getItem("isLanguage") || "Chinese",
