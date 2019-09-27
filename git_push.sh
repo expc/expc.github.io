@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-cd /g/expc.github.io
+cd /Applications/var/www/expc.github.io
 
 
 
