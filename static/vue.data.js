@@ -143,7 +143,7 @@ var vm = new Vue({
                 round:'Round',
                 start_time:'Start date',
                 end_time:'End date',
-                announcement:'announcement',
+                announcement:'Announcement',
                 announcementNo:'Temporarily no data',
                 announcementTime:'time',
                 announcementList1Title:'title',
