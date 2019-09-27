@@ -145,10 +145,10 @@ var vm = new Vue({
                 end_time:'End date',
                 announcement:'Announcement',
                 announcementNo:'Temporarily no data',
-                announcementTime:'time',
-                announcementList1Title:'title',
+                announcementTime:'Time',
+                announcementList1Title:'Title',
                 announcementList1Time:'2019-09-09',
-                announcementList1Content:'content',
+                announcementList1Content:'Content',
                 
                 
             }
