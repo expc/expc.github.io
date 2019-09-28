@@ -918,20 +918,33 @@ function transTime(timestamp) {
 
 function investment(data){
     var classs='';
+    var sort=data.sort+1;
     // var s = parseInt(data.start_time.getTime()/1000);
     var start_time = data.start_time;
     var end_time = data.end_time;
     var start_time_stamp=getTimestamp(start_time);
     var end_time_stamp=getTimestamp(end_time);
     var currtime_stamp=currTimestamp();
+    var curr_quan_font='';
+    var show_size=vm.languageCon.the_first+ '<br>'  + sort + '<br>' + vm.languageCon.round ;
+    var show_size_null=vm.languageCon.sell;
+    // data.current_quantity=0;
     if(currtime_stamp > start_time_stamp && currtime_stamp < end_time_stamp){
         classs='first';
         setSession('end_time_stamp',end_time_stamp);
+        if(data.current_quantity <=0){
+            show_size=show_size_null;
+        }else{
+            show_size=show_size;
+        }
     }
-    var sort=data.sort+1;
+
+    // console.log('sssss:',data.current_quantity);
+
+
     var start_price_usdt=decimal(data.start_price_usdt,4);
     return '<li class="'+classs+' " style="">'+
-        '<div class="li li-1 white" style="">'+vm.languageCon.the_first+ '<br>'  + sort + '<br>' + vm.languageCon.round +'</div>' +
+        '<div class="li li-1 white" style="">'+ show_size + '</div>' +
         '<div class="li li-2"><div class="top">' +
         '<div class="left text-center ">' +
         '<span class="blue font-14">'+data.current_quantity+' EXPC</span>' +
