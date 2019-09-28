@@ -928,7 +928,6 @@ function investment(data){
     var curr_quan_font='';
     var show_size=vm.languageCon.the_first+ '<br>'  + sort + '<br>' + vm.languageCon.round ;
     var show_size_null=vm.languageCon.sell;
-    // data.current_quantity=0;
     if(currtime_stamp > start_time_stamp && currtime_stamp < end_time_stamp){
         classs='first';
         setSession('end_time_stamp',end_time_stamp);
@@ -938,10 +937,6 @@ function investment(data){
             show_size=show_size;
         }
     }
-
-    // console.log('sssss:',data.current_quantity);
-
-
     var start_price_usdt=decimal(data.start_price_usdt,4);
     return '<li class="'+classs+' " style="">'+
         '<div class="li li-1 white" style="">'+ show_size + '</div>' +

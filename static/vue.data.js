@@ -78,7 +78,7 @@ var vm = new Vue({
                 sell:'售<br><br>罄',
             },
             English: {
-                sell:'Sell<br>out ',
+                sell:'Sell<br><br>out ',
                 news2_time:'2019-09-22',
                 news1_time:'2019-09-22',
                 news1_tit:'Announcement on the condition of Launching EXPC Free Airdrop',

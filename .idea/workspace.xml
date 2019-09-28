@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="464cc460-40a4-4201-ac4e-5b0971ac6c12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/eos.js" afterPath="$PROJECT_DIR$/static/eos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/vue.data.js" afterPath="$PROJECT_DIR$/static/vue.data.js" />
     </list>
@@ -16,23 +15,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="eos.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/eos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="955" column="21" lean-forward="false" selection-start-line="955" selection-start-column="21" selection-end-line="955" selection-end-column="21" />
+            <state relative-caret-position="314">
+              <caret line="930" column="29" lean-forward="false" selection-start-line="930" selection-start-column="29" selection-end-line="930" selection-end-column="29" />
               <folding>
-                <marker date="1569660175649" expanded="true" signature="25866:25879" ph="..." />
+                <marker date="1569660230599" expanded="true" signature="25866:25879" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vue.data.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vue.data.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/vue.data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+            <state relative-caret-position="378">
+              <caret line="76" column="29" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -63,8 +62,8 @@
         <option value="$PROJECT_DIR$/messageList/news2.html" />
         <option value="$PROJECT_DIR$/message.html" />
         <option value="$PROJECT_DIR$/git_push.sh" />
-        <option value="$PROJECT_DIR$/static/vue.data.js" />
         <option value="$PROJECT_DIR$/static/eos.js" />
+        <option value="$PROJECT_DIR$/static/vue.data.js" />
       </list>
     </option>
   </component>
@@ -218,12 +217,12 @@
       <option name="presentableId" value="Default" />
       <updated>1569474335373</updated>
       <workItem from="1569474338803" duration="1299000" />
-      <workItem from="1569577460839" duration="2363000" />
+      <workItem from="1569577460839" duration="2456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3662000" />
+    <option name="totallyTimeSpent" value="3755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="791" extended-state="6" />
@@ -264,7 +263,7 @@
         <state relative-caret-position="20790">
           <caret line="945" column="14" lean-forward="true" selection-start-line="945" selection-start-column="14" selection-end-line="945" selection-end-column="14" />
           <folding>
-            <marker date="1569660175649" expanded="true" signature="25866:25879" ph="..." />
+            <marker date="1569660230599" expanded="true" signature="25866:25879" ph="..." />
           </folding>
         </state>
       </provider>
@@ -346,21 +345,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/vue.data.js">
+    <entry file="file://$PROJECT_DIR$/static/eos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="77" column="31" lean-forward="false" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="314">
+          <caret line="930" column="29" lean-forward="false" selection-start-line="930" selection-start-column="29" selection-end-line="930" selection-end-column="29" />
+          <folding>
+            <marker date="1569660230599" expanded="true" signature="25866:25879" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/eos.js">
+    <entry file="file://$PROJECT_DIR$/static/vue.data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="955" column="21" lean-forward="false" selection-start-line="955" selection-start-column="21" selection-end-line="955" selection-end-column="21" />
-          <folding>
-            <marker date="1569660175649" expanded="true" signature="25866:25879" ph="..." />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="76" column="29" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
