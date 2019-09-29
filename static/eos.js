@@ -825,13 +825,19 @@ function accSub(arg1, arg2) {
 function nodetype3_data(data) {
     var s=data.rows;
     var html='';
-
+    var cur_quan_total=0;
+    var total_quan=0;
     for ( var i = 0; i <s.length; i++){
         var price= s[i]['eos_price'];
         var price_arr=price.split(" ");
         var eos_price1=price_arr[0].split(".");
         var eos_price=eos_price1[0] + " EOS ";
-        console.log(eos_price);
+        var cur_quan=s[i]['cur_quan'];
+        var total_quan_f=s[i]['total_quan'];
+
+        cur_quan_total=cur_quan+cur_quan_total;
+        total_quan=total_quan_f+total_quan;
+
         var high='';
         if(s[i]['t_name']=='high'){
             high=vm.languageCon.high_node + vm.languageCon.node;
@@ -844,7 +850,10 @@ function nodetype3_data(data) {
         }
         html+='<li data-price="'+eos_price+'" onclick="nodetype3_one(\''+eos_price+'\')"><b class="font-14">'+high+'</b><br><span class="font-10">'+eos_price+'</span></li>';
     }
-
+    // console.log(cur_quan_total);
+    // console.log(total_quan);
+    var cur_quan_html=cur_quan_total + '/' + total_quan;
+    $("#cur_quan").html(cur_quan_html);
     $(".nodetype3").html(html);
     scatter_status();
 }
