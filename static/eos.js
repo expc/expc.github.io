@@ -852,7 +852,7 @@ function nodetype3_data(data) {
     }
     // console.log(cur_quan_total);
     // console.log(total_quan);
-    var cur_quan_html=cur_quan_total + '/' + total_quan;
+    var cur_quan_html='<s style="color: #03ecc1;">'+cur_quan_total +'</s>' + '<s style="color: #fff">/</s>' + total_quan;
     $("#cur_quan").html(cur_quan_html);
     $(".nodetype3").html(html);
     scatter_status();
