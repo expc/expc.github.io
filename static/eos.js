@@ -940,11 +940,11 @@ function investment(data){
     if(currtime_stamp > start_time_stamp && currtime_stamp < end_time_stamp){
         classs='first';
         setSession('end_time_stamp',end_time_stamp);
-        if(data.current_quantity <=0){
-            show_size=show_size_null;
-        }else{
-            show_size=show_size;
-        }
+    }
+    if(data.current_quantity <=0){
+        show_size=show_size_null;
+    }else{
+        show_size=show_size;
     }
     var start_price_usdt=decimal(data.start_price_usdt,4);
     return '<li class="'+classs+' " style="">'+

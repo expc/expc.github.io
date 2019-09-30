@@ -17,11 +17,12 @@
       <file leaf-file-name="eos.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/eos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="854" column="99" lean-forward="false" selection-start-line="854" selection-start-column="99" selection-end-line="854" selection-end-column="99" />
+            <state relative-caret-position="339">
+              <caret line="941" column="15" lean-forward="false" selection-start-line="941" selection-start-column="15" selection-end-line="941" selection-end-column="15" />
               <folding>
-                <marker date="1569732741393" expanded="true" signature="24288:24303" ph="..." />
-                <marker date="1569732741393" expanded="true" signature="26288:26301" ph="..." />
+                <marker date="1569812738209" expanded="true" signature="24288:24303" ph="..." />
+                <marker date="1569812738209" expanded="true" signature="24343:24354" ph="..." />
+                <marker date="1569812738209" expanded="true" signature="26288:26301" ph="..." />
               </folding>
             </state>
           </provider>
@@ -221,12 +222,12 @@
       <option name="presentableId" value="Default" />
       <updated>1569474335373</updated>
       <workItem from="1569474338803" duration="1299000" />
-      <workItem from="1569577460839" duration="3419000" />
+      <workItem from="1569577460839" duration="3743000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4718000" />
+    <option name="totallyTimeSpent" value="5042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="791" extended-state="6" />
@@ -267,8 +268,9 @@
         <state relative-caret-position="20790">
           <caret line="945" column="14" lean-forward="true" selection-start-line="945" selection-start-column="14" selection-end-line="945" selection-end-column="14" />
           <folding>
-            <marker date="1569732741393" expanded="true" signature="24288:24303" ph="..." />
-            <marker date="1569732741393" expanded="true" signature="26288:26301" ph="..." />
+            <marker date="1569812738209" expanded="true" signature="24288:24303" ph="..." />
+            <marker date="1569812738209" expanded="true" signature="24343:24354" ph="..." />
+            <marker date="1569812738209" expanded="true" signature="26288:26301" ph="..." />
           </folding>
         </state>
       </provider>
@@ -370,11 +372,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/eos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="854" column="99" lean-forward="false" selection-start-line="854" selection-start-column="99" selection-end-line="854" selection-end-column="99" />
+        <state relative-caret-position="339">
+          <caret line="941" column="15" lean-forward="false" selection-start-line="941" selection-start-column="15" selection-end-line="941" selection-end-column="15" />
           <folding>
-            <marker date="1569732741393" expanded="true" signature="24288:24303" ph="..." />
-            <marker date="1569732741393" expanded="true" signature="26288:26301" ph="..." />
+            <marker date="1569812738209" expanded="true" signature="24288:24303" ph="..." />
+            <marker date="1569812738209" expanded="true" signature="24343:24354" ph="..." />
+            <marker date="1569812738209" expanded="true" signature="26288:26301" ph="..." />
           </folding>
         </state>
       </provider>
