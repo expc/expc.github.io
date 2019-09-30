@@ -247,7 +247,7 @@ body {
 }
 .expc-investment li .li-1 {
 	text-align: center;
-	width: 35px;
+	width: 60px;
 	font-size: 15px;
 	font-weight: 700;
 	padding: 4px;
@@ -261,7 +261,7 @@ body {
 
 }
 .expc-investment li .li-2 {
-	width: calc(100% - 35px);
+	width: calc(100% - 60px);
 }
 
 .expc-investment li .li-2 .top {
