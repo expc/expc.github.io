@@ -795,8 +795,8 @@ function rounds1_data(r) {
         html+=investment(data[i]);
     }
     // console.log(total_quantity);
-    total_quantity=(total_quantity - parseInt(static_price) ) / 100000000;
-    current_quantity=(current_quantity/100000000) ;
+    total_quantity= total_quantity  / 100000000;
+    current_quantity=(current_quantity- parseInt(static_price))/100000000  ;
     $("#total_quantity").html(total_quantity);
     $("#current_quantity").html(current_quantity);
     $("#investment_list").html(html);
