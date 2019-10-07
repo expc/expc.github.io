@@ -4,7 +4,8 @@ var data = null;
 var username;
 var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
-
+//减去100万
+var subtract=1000000;
 
 
 // var contract_code='playerworld5';
@@ -383,8 +384,10 @@ function mature_quantity() {
                 // console.log('join',num);
                 quantity=Number(num)+quantity ;
             }
-            // console.log(quantity);
-            $("#mature_quantity").html(decimal(quantity/10000,1));
+            var s= decimal(quantity/10000,1);
+            // console.log(s);
+            var r =parseInt(s) + parseInt(parseInt(subtract) / 10000 );
+            $("#mature_quantity").html(r);
         } catch (e) {
             console.log(e);
         }
@@ -792,7 +795,7 @@ function rounds1_data(r) {
         html+=investment(data[i]);
     }
     total_quantity=total_quantity/100000000
-    current_quantity=current_quantity/100000000
+    current_quantity=(current_quantity/100000000) - (parseInt(subtract) / 100000000);
     $("#total_quantity").html(total_quantity);
     $("#current_quantity").html(current_quantity);
     $("#investment_list").html(html);
@@ -937,8 +940,10 @@ function investment(data){
     var curr_quan_font='';
     var show_size=vm.languageCon.the_first+ '<br>'  + sort + '<br>' + vm.languageCon.round ;
     var show_size_null=vm.languageCon.sell;
+    var current_quantity= data.current_quantity;
     if(currtime_stamp > start_time_stamp && currtime_stamp < end_time_stamp){
         classs='first';
+        current_quantity=parseInt(current_quantity) - parseInt(subtract);
         setSession('end_time_stamp',end_time_stamp);
     }
     if(data.current_quantity <=0){
@@ -951,7 +956,7 @@ function investment(data){
         '<div class="li li-1 white" style="">'+ show_size + '</div>' +
         '<div class="li li-2"><div class="top">' +
         '<div class="left text-center ">' +
-        '<span class="blue font-14">'+data.current_quantity+' EXPC</span>' +
+        '<span class="blue font-14">'+ current_quantity +' EXPC</span>' +
         '<br><span>'+vm.languageCon.residual+'</span></div>' +
         '<div class="right text-center">' +
         '<span class="font-20 orange">'+start_price_usdt+' USDT</span>' +
