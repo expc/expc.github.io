@@ -5,7 +5,7 @@ var username;
 var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
 //减去100万
-var subtract=1000000;
+var static_price=1000000;
 var static_node=1;
 
 // var contract_code='playerworld5';
@@ -386,7 +386,7 @@ function mature_quantity() {
             }
             var s= decimal(quantity/10000,1);
             // console.log(s);
-            var r =parseInt(s) + parseInt(parseInt(subtract) / 10000 );
+            var r =parseInt(s) + parseInt(parseInt(static_price) / 10000 );
             $("#mature_quantity").html(r);
         } catch (e) {
             console.log(e);
@@ -795,7 +795,7 @@ function rounds1_data(r) {
         html+=investment(data[i]);
     }
     // console.log(total_quantity);
-    total_quantity=(total_quantity - parseInt(subtract) ) / 100000000;
+    total_quantity=(total_quantity - parseInt(static_price) ) / 100000000;
     current_quantity=(current_quantity/100000000) ;
     $("#total_quantity").html(total_quantity);
     $("#current_quantity").html(current_quantity);
@@ -944,7 +944,7 @@ function investment(data){
     var current_quantity= data.current_quantity;
     if(currtime_stamp > start_time_stamp && currtime_stamp < end_time_stamp){
         classs='first';
-        current_quantity=parseInt(current_quantity) - parseInt(subtract);
+        current_quantity=parseInt(current_quantity) - parseInt(static_price);
         setSession('end_time_stamp',end_time_stamp);
     }
     if(data.current_quantity <=0){
