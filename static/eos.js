@@ -6,7 +6,7 @@ var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
 //减去100万
 var subtract=1000000;
-
+var static_node=1;
 
 // var contract_code='playerworld5';
 // var contract_scope='playerworld5';
@@ -794,8 +794,9 @@ function rounds1_data(r) {
         current_quantity=Number(data[i]['current_quantity']) + current_quantity;
         html+=investment(data[i]);
     }
-    total_quantity=total_quantity/100000000
-    current_quantity=(current_quantity/100000000) - (parseInt(subtract) / 100000000);
+    // console.log(total_quantity);
+    total_quantity=(total_quantity - parseInt(subtract) ) / 100000000;
+    current_quantity=(current_quantity/100000000) ;
     $("#total_quantity").html(total_quantity);
     $("#current_quantity").html(current_quantity);
     $("#investment_list").html(html);
@@ -855,7 +856,7 @@ function nodetype3_data(data) {
     }
     // console.log(cur_quan_total);
     // console.log(total_quan);
-    var cur_quan_html='<s style="color: #03ecc1;">'+cur_quan_total +'</s>' + '<s style="color: #fff">/</s>' + total_quan;
+    var cur_quan_html='<s style="color: #03ecc1;">'+cur_quan_total +'</s>' + '<s style="color: #fff">/</s>' + (parseInt(total_quan)+parseInt(static_node));
     $("#cur_quan").html(cur_quan_html);
     $(".nodetype3").html(html);
     scatter_status();
