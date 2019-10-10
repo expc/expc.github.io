@@ -5,8 +5,8 @@ var username;
 var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
 //减去100万
-var static_price=1000000;
-var static_node=1;
+var static_price=2000000;
+var static_node=3;
 
 // var contract_code='playerworld5';
 // var contract_scope='playerworld5';
@@ -478,8 +478,6 @@ function decimal(number,n){
     number = Math.round(number * Math.pow(10, n)) / Math.pow(10, n);
     number = Number(number).toFixed(n);
     return number;
-
-
 }
 
 function rounds1() {
