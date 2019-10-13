@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Expc chain</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" type="text/css" href="./static/message.css">
+	<script src="script/jquery.1.11.3.js"></script>
+</head>
+<body>
+	<div id="app">
+		<!-- <p></p> -->
+		<p class="title text-center">{{languageCon.announcement}}</p>
+		<!--<div style="padding: 30px;text-align: center;">{{languageCon.announcementNo}}</div>-->
+		  <ul>
+			  <li >
+				  <a href="messageList/news1.html">
+					  <span class="info">{{languageCon.news1_tit}}</span>
+					  <span class="time">{{languageCon.news1_time}}</span>
+				  </a>
+			  </li>
+			  <li >
+				  <a href="messageList/news2.html">
+					  <span class="info">{{languageCon.news2_tit}}</span>
+					  <span class="time">{{languageCon.news2_time}}</span>
+				  </a>
+			  </li>
+
+		</ul>
+	</div>
+	<footer style="position: fixed;bottom:1px;width: 100%; margin:10px 0; text-align: center;">
+		<p style=" border-top:1px solid #ccc;width: 80%;margin:0 auto;padding:15px 0 8px 0;">EMAIL: expcchain@yandex.com </p>
+	</footer>
+</body>
+	<script type="text/javascript" src="./static/vue.min.js"></script>
+	
+	<script type="text/javascript" src="./static/vue.data.js"></script>
+	<script type="text/javascript" src="./static/eos.js"></script>
+
+</html>
