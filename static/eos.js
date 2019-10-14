@@ -1,12 +1,12 @@
-
+﻿
 // console.log(decimal(test2,4));
 var data = null;
 var username;
 var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
 //减去100万
-var static_price=2000000;
-var static_node=3;
+var static_price=2900000;
+var static_node=4;
 
 // var contract_code='playerworld5';
 // var contract_scope='playerworld5';
