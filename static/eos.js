@@ -4,13 +4,13 @@ var data = null;
 var username;
 var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
-//减去100万
-var static_price=2900000;
-var static_node=4;
 
-// var contract_code='playerworld5';
-// var contract_scope='playerworld5';
-// var contract_currency='XSK';
+var static_price=3965423;
+var static_node=6;
+
+// var contract_code='';
+// var contract_scope='';
+// var contract_currency='';
 // var chainId='e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473';
 // const rpc = new eosjs_jsonrpc.JsonRpc('https://jungle2.cryptolions.io');
 // const rpc2 = new eosjs_jsonrpc.JsonRpc('https://jungle2.cryptolions.io');
