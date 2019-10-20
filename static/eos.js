@@ -5,8 +5,8 @@ var username;
 var users_limit=10000000;
 let pre = document.getElementsByTagName('pre')[0];
 
-var static_price=3965423;
-var static_node=6;
+var static_price=4765974;
+var static_node=9;
 
 // var contract_code='';
 // var contract_scope='';
