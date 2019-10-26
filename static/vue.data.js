@@ -76,6 +76,10 @@ var vm = new Vue({
                 news1_time:'2019-09-22',
                 news2_time:'2019-09-22',
                 sell:'售<br><br>罄',
+                news3_tit:'关于征集EXPC战略合作交易所的公告',
+                news3_time:'2019-10-26',
+                news3_con:'EXPC全球社区爱好者，现面向全球征集EXPC交易所合作伙伴，社区爱好者可通过官方邮件expcchain@yandex.com进行合作沟通。届时将通过官方公告确认。',
+
             },
             English: {
                 sell:'Sell<br><br>out ',
@@ -151,6 +155,9 @@ var vm = new Vue({
                 announcementList1Title:'Title',
                 announcementList1Time:'2019-09-09',
                 announcementList1Content:'Content',
+                news3_tit:'Announcement on the collection of the Strategic Cooperation on EXPC Exchange',
+                news3_time:'2019-10-26',
+                news3_con:'Now we are looking for partners of the cooperation on EXPC Exchange around the world. All community enthusiasts can communicate us through the official email expcchain@yandex.com. It will be confirmed by an official announcement.',
                 
                 
             }
