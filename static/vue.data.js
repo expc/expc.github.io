@@ -81,7 +81,7 @@ var vm = new Vue({
                 news3_con:'EXPC全球社区爱好者，现面向全球征集EXPC交易所合作伙伴，社区爱好者可通过官方邮件expcchain@yandex.com进行合作沟通。届时将通过官方公告确认。',
                 news4_tit:'关于EXPC节点数量、参与条件及奖励的调整公告',
                 news4_con:'EXPC全球社区玩家，为了更好扩大与推动EXPC指数链的共识，现做以下调整: </br></br>1.将节点增加到1930个</br></br>2.节点参与条件调整为:</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;初级节点:1000美金的EOS</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中级节点:5000美金的EOS</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级节点:10000美金的EOS</br></br>3.节点奖励调整为:</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;初级节点:10% EOS</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中级节点:20% EOS  + 5% EXPC</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高级节点:30% EOS  + 10% EXPC</br></br>4.原有节点，只需新购买一个EOS的EXPC,即可完成节点升级',
-                news4_time:'2019-10-02',
+                news4_time:'2019-11-02',
             },
             English: {
                 sell:'Sell<br><br>out ',
@@ -162,7 +162,7 @@ var vm = new Vue({
                 news3_con:'Now we are looking for partners of the cooperation on EXPC Exchange around the world. All community enthusiasts can communicate us through the official email expcchain@yandex.com. It will be confirmed by an official announcement.',
                 news4_tit:'Announcement on the adjustment on the number of EXPC nodes, participation requirements and reward rules',
                 news4_con:'To the EXPC global community players, in order to expand and promote the consensus of the EXPC index chain better, the following adjustments are made:</br></br>1.Increase the number of nodes to 1930</br></br>2.       The participation requirements for node are adjusted to be:</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primary node: $1000 EOS</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intermediate node: $5,000 EOS</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advanced node: $10,000 EOS</br></br>3. The rewards to node are adjusted to be:</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primary node: 10% EOS</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intermediate node: 20% EOS + 5% EXPC</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advanced node: 30% EOS + 10% EXPC</br></br>4.       The existed node can be upgraded by purchasing a new EOS EXPC.',
-                news4_time:'2019-10-02',
+                news4_time:'2019-11-02',
                 
             }
         },
