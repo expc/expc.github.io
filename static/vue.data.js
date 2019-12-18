@@ -86,7 +86,7 @@ var vm = new Vue({
                 news5_time:'2019-9-4',
                 news5_img:'../images/img5.jpeg',
                 news5_con:'https://youtu.be/mF7apQes_mY',
-                news5_tishi:'这个视频需要翻墙才能看',
+                news5_tishi:'某些国家和地区，需要VPN才能正常观看',
             },
             English: {
                 sell:'Sell<br><br>out ',
@@ -172,7 +172,7 @@ var vm = new Vue({
                 news5_time:'2019-9-4',
                 news5_img:'../images/img5.jpeg',
                 news5_con:'https://youtu.be/mF7apQes_mY',
-                news5_tishi:'This video requires over the wall to watch',
+                news5_tishi:'Some countries and regions need VPN for normal viewing',
                 
             }
         },
