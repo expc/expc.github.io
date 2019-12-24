@@ -87,6 +87,10 @@ var vm = new Vue({
                 news5_img:'../images/img5.jpeg',
                 news5_con:'https://youtu.be/mF7apQes_mY',
                 news5_tishi:'某些国家和地区，需要VPN才能正常观看',
+                news6_tit:'关于EXPC上交易所公告',
+                news6_con:'EXPC全球玩家，EXPC将在四轮结束后，正式登录交易所。',
+                news6_time:'2019-12-14',
+
             },
             English: {
                 sell:'Sell<br><br>out ',
@@ -173,6 +177,9 @@ var vm = new Vue({
                 news5_img:'../images/img5.jpeg',
                 news5_con:'https://youtu.be/mF7apQes_mY',
                 news5_tishi:'Some countries and regions need VPN for normal viewing',
+                news6_tit:'Announcement on the exchange of expc',
+                news6_con:'Announcement on the list of EXPC,The EXPC will be officially listed on exchange after four-round investment.',
+                news6_time:'2019-12-14',
                 
             }
         },
